@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Based on HTML5 Bones | http://html5bones.com -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>The Code Review | Newsletter Signup</title>
+	
+	<meta name="description" content="Code Review Newsletter Signup Form by Demetri Enriquez for Treehouse Assignment #3">
+	
+  <!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Style sheet link -->
+    <link href="css/reset.css" rel="stylesheet" media="all">
+	<link href="css/main.css" rel="stylesheet" media="all">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+	<h1>The Code Review</h1>
+	<header class="form-header">
+		<h2>Signup for our newsletter</h2>
+		<p>Get the latest news on how your code is doing right in your inbox</p>
+	</header>
+
+	<!-- Begin Form Fieldset 1-->
+
+	<div id="form-wrapper">
+		<form action="form.html" method="post">
+			<fieldset class="top">
+				<legend class="top-legend">Contact Information</legend>
+				<label for="name">Full Name</label>
+				<input type="text" id="name" name="user_name" class="input-height" placeholder="Required" required>
+				<label for="mail">Email Address</label>
+				<input type="email" id="mail" name="user_email" class="input-height" placeholder="Required" required>
+				<label for="phone">Phone Number</label>
+				<input type="tel" id="phone" name="user_phone" class="input-height text-left" placeholder="&nbsp;&nbsp;555-555-5555" pattern="^\d{3}-\d{3}-\d{4}$">
+				<label for="address">Street Address</label>
+				<input type="text" id="address" name="user_address" class="input-height">
+				<label for="city">City</label>
+				<input type="text" id="city" name="user_city" class="input-height">
+				<label for="state">State</label>
+				<select id="state" name="user_state" class="input-height arrow">
+					<option value="">&nbsp;&nbsp;Choose State</option>
+					<option value="alabama">AL</option>
+					<option value="alaska">AK</option>
+					<option value="arizona">AZ</option>
+					<option value="arkansas">AR</option>
+					<option value="california">CA</option>
+					<option value="colorado">CO</option>
+					<option value="conneticut">CT</option>
+					<option value="delaware">DE</option>
+					<option value="florida">FL</option>
+					<option value="georgia">GA</option>
+					<option value="hawaii">HI</option>
+				</select>	
+				<label for="zip">Zip Code</label>
+				<input type="text" id="zip" name="user_zip" class="input-height">			
+			</fieldset>
+
+				<!-- Begin Form Fieldset 2-->
+
+			<fieldset class="about">
+				<legend>About Me</legend>
+				<label for="job">Occupation</label>
+				<select id="job" name="user_job" class="input-height arrow">
+				<option value="">&nbsp;&nbsp;Choose Occupation</option>
+					<optgroup label="Web">
+						<option value="front_end">Front End Devloper</option>
+						<option value="back_end">Back End Developer</option>
+						<option value="designer">Designer</option>
+						<option value="proj_manager">Project Manager</option>
+						<option value="ux">UX Specialist</option>
+					</optgroup>
+					<optgroup label="Creative">
+						<option value="graphic_artist">Graphic Artist</option>
+						<option value="sculptor">Sculpter</option>
+						<option value="film_maker">Film Maker</option>
+						<option value="composer">Composer</option>
+					</optgroup>
+					<optgroup label="Other">
+						<option value="marketer">Marketer</option>
+						<option value="hairdresser">Hairdresser</option>
+						<option value="plumber">Plumber</option>
+						<option value="nurse">Nurse</option>
+						<option value="self">Self-Employed</option>
+					</optgroup>					
+				</select>
+
+				<p class="prompt top-p">Your Age</p>
+
+				<input type="radio" id="under-25" name="user_age" value="user_under25">
+				<label class="padding-reset" for="under-25">24 or Under</label><br>
+
+				<input type="radio" id="25to45" name="user_age" value="user_25to45">
+				<label class="padding-reset" for="25to45">25-45</label><br>
+
+				<input type="radio" id="over-45" value="user_over45" name="user_age">
+				<label class="padding-reset" for="over-45">45 or Over</label>
+
+				<label id="hobbies-label" class="block">Hobbies</label>
+				<p class="prompt">Please tell us a little about your hobbies and interests</p>
+				<textarea id="hobbies" rows="6" name="user_hobbies" maxlength="200" placeholder="Example: hiking, sci-fi movies, italian food, etc.."></textarea>
+			</fieldset>
+
+				<!-- Begin Form Fieldset 3-->
+
+			<fieldset>
+				<legend class="news-legend">Newsletter</legend>
+				<p class="prompt">Select the newsletter you would like to recieve</p>
+
+				<input type="checkbox" id="sub-html" name="sub_type" value="user_sub_html">
+				<label class="padding-reset" for="sub-html">HTML News</label><br>
+
+				<input type="checkbox" id="sub-css" name="sub_type" value="user_sub_css">
+				<label class="padding-reset" for="sub-css">CSS News</label><br>
+
+				<input type="checkbox" id="sub-js" name="sub_type" value="user_sub_js">
+				<label class="padding-reset" for="sub-js">Javascript News</label><br>
+
+				<p class="prompt">Newsletter Format</p>
+
+				<input type="radio" id="sub-format-html" name="sub_format" value="user_sub_format_html">
+				<label class="padding-reset" for="sub-format-html">HTML</label><br>
+
+				<input type="radio" id="sub-format-text" name="sub_format" value="user_sub_format_text">
+				<label class="padding-reset" for="sub-format-text">Plain Text</label><br>
+				
+				<p class="prompt">Other topics you'd like to hear about</p>
+				<textarea id="other-topics" rows="6" name="user_topics" maxlength="200"></textarea>
+			</fieldset>
+			<button type="submit">Sign Up</button>
+			<button type="reset" class="reset-button">Reset</button>
+		</form>
+
+		<footer><p>Copyright The Code Review</p></footer>
+
+	</div>
+</body>
+</html>
