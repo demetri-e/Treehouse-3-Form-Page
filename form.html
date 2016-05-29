@@ -103,8 +103,7 @@
 				<input type="radio" id="over-45" value="user_over45" name="user_age">
 				<label class="padding-reset" for="over-45">45 or Over</label>
 
-				<label id="hobbies-label" class="block">Hobbies</label>
-				<p class="prompt">Please tell us a little about your hobbies and interests</p>
+				<label id="hobbies-label" class="block" for="hobbies">Hobbies and Interests</label>
 				<textarea id="hobbies" rows="6" name="user_hobbies" maxlength="200" placeholder="Example: hiking, sci-fi movies, italian food, etc.."></textarea>
 			</fieldset>
 
@@ -131,8 +130,8 @@
 				<input type="radio" id="sub-format-text" name="sub_format" value="user_sub_format_text">
 				<label class="padding-reset" for="sub-format-text">Plain Text</label><br>
 				
-				<p class="prompt">Other topics you'd like to hear about</p>
-				<textarea id="other-topics" rows="6" name="user_topics" maxlength="200"></textarea>
+				<label for="other-topics" class="padding-reset inline">Other topics you'd like to hear about</label>
+				<textarea id="other-topics" rows="6" name="user_topics" maxlength="200" placeholder="Example: PHP, Ruby, Design, etc.."></textarea>
 			</fieldset>
 			<button type="submit">Sign Up</button>
 			<button type="reset" class="reset-button">Reset</button>

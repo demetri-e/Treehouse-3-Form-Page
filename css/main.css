@@ -121,6 +121,10 @@ label.block {
 	padding-bottom: 0;
 }
 
+label.inline {
+	width: 100%;
+}
+
 /* Input Element Styles ---------*/
 
 input, 
